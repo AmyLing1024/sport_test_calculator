@@ -11,13 +11,13 @@ col1, col2 = st.columns(2)
 
 with col1:
       gender = st.selectbox('性别', ('男', '女'))
-      weight = st.number_input("体重 (千克)")
+      grade = st.selectbox("年级",(1, 2, 3, 4, 5, 6))
       jump_rope = st.number_input('一分钟跳绳 (个)')   
       sit_up = st.number_input('仰卧起坐 (个)')
       sit_and_reach = st.number_input('坐位体前屈 (厘米)')
 
 with col2:
-      grade = st.selectbox("年级",(1, 2, 3, 4, 5, 6))
+      weight = st.number_input("体重 (千克)")
       height = st.number_input('身高 (米)')
       capacity = st.number_input('肺活量 (毫升)')
       fifty_m_run = st.number_input('50米跑 (秒)')
